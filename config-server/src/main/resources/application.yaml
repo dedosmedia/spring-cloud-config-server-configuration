@@ -1,0 +1,14 @@
+server:
+  application:
+    name: config-server
+  port: 8888
+
+# Paso 1. Agregamos la dependencia spring-cloud-config-server
+# Paso 2. Habilitamos el servidor de configuración anotando la clase principal con @EnableConfigServer
+# Paso 3. Indicamos de qué repositorio extraer la configuración para los clientes
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dedosmedia/spring-cloud-config-server-configuration

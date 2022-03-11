@@ -1,0 +1,22 @@
+# Paso 1. Agregamos las dependencias spring-cloud-config-server
+# - spring-cloud-starter-config
+# - spring-boot-starter-actuator (Para habilitar el endpoint /refresh que recarga la configuración en los métodos anotado con @RefreshScope)
+# - sprint-boot-starter-web    (Para generar los endpoints Rest donde vamos a probar)
+# Paso 2. Importamos la configuración desde el servidor de configuración
+# - antes (hasta spring 2.4) se hacía con spring.cloud.config.server.git.uri
+# Paso 3. Habilitar los endpoints. * por facilidad, pero solo necesitariamos probar el /refresh de actuator
+# Paso 4. Si queremos probar que la configuración se actualiza en caliente, enviamos una petición POST al /refresh,
+# - recargamos el servicio y vemos la nueva configuración aplicada.
+
+
+spring:
+  application:
+    name: dh-cuenta-service
+  config:
+    import: configserver:http://localhost:8888
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
