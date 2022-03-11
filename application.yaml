@@ -1,0 +1,4 @@
+message:
+  timeout: 10
+  text: Este mensaje y le timeout serán sobreescrito por la configuración con un nombre más específico
+  icon: Este icono no será sobreescrito desde las otras configuraciones
