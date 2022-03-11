@@ -1,0 +1,6 @@
+server:
+  port: 8889
+
+message:
+  timeout: 60
+  text: Este mensaje de alerta desaparecerá en 60 segundos.
