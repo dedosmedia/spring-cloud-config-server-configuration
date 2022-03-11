@@ -14,6 +14,8 @@ spring:
     name: dh-cuenta-service
   config:
     import: configserver:http://localhost:8888
+  profiles:
+    active: dev
 
 management:
   endpoints:
