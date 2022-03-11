@@ -1,4 +1,5 @@
 message:
   timeout: 10
-  text: Este mensaje y le timeout serán sobreescrito por la configuración con un nombre más específico
+  text: Este mensaje y el timeout serán sobreescritos por la configuración con un nombre más específico (dh-cuenta-service)
   icon: Este icono no será sobreescrito desde las otras configuraciones
+
