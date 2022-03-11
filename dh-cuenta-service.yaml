@@ -3,4 +3,4 @@ server:
 
 message:
   timeout: 60
-  text: Este mensaje de alerta desaparecerá en 60 segundos***. (Sobreescribe el de application.yml)
+  text: Este mensaje de alerta desaparecerá en 60 segundos. (Sobreescribe el de application.yml)
