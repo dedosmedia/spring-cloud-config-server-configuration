@@ -1,0 +1,4 @@
+server:
+  port: 9001
+
+message: Este es un mensaje configurado dinámicamente.
