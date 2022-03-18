@@ -1,4 +1,4 @@
 server:
-  port: 9001
+  port: ${random.int(5000,5100)}
 
 message: Este es un mensaje configurado dinámicamente.
